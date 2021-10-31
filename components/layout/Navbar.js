@@ -17,7 +17,7 @@ const Navbar = () => {
                     </Linky>
                 </div>
                 <div className='navbar-left'>
-                    <a href='https://github.com/frankalvarezdev' target='_blank'>
+                    <a href='https://github.com/frankalvarezdev' target='_blank' rel="noreferrer">
                         <i className='brand-github'/>
                     </a>
                 </div>

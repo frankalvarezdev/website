@@ -1,0 +1,78 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: $bg;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: $extra-bg;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary-bg;
+}
+
+// colores del body -> en general
+body {
+    background-color: $bg;
+    color: $color;
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-top: $navbar-width;
+    padding-bottom: 280px;
+
+    @include to(md) {
+        padding-bottom: 650px;
+    }
+}
+// titulos
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+hr, .hr {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    border: none;
+    border-top: 1px solid $border-color;
+    opacity: 0.3;
+}
+iframe {
+    background: $secondary-bg;
+}
+.link {
+    color: $primary-color;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+a {
+    color: $color;
+    text-decoration: none;
+}

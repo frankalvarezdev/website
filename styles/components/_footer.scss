@@ -1,0 +1,59 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+
+    @include to(md) {
+        height: 630px;
+    }
+}
+.footer-links {
+    padding: 2rem 0;
+    display: grid;
+    @include from(md) {
+        grid-template-columns:  2fr 1fr 1fr 1fr;
+    }
+}
+.footer-link {
+    a {
+        display: block;
+        opacity: 0.6;
+        font-weight: 500;
+    }
+    h2 {
+        @include to(md) {
+            margin-top: 1rem;
+        }
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+}
+.footer-brand {
+    @include to(md) {
+        margin-bottom: 1.5rem;
+    }
+    &-logo {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 40px 1fr;
+        h2 {
+            @include center-y;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}
+.footer-socials {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    .social {
+        @include center;
+        height: 40px;
+        font-size: 1.1rem;
+        border-radius: $radius-full;
+        background-color: $secondary-bg;
+    }
+}

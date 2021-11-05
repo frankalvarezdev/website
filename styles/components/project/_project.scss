@@ -1,0 +1,16 @@
+.project {
+    background-color: $secondary-bg;
+    padding: 1rem 1.2rem;
+    border-radius: $radius-sm;
+    text-align: center;
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: $margin;
+        font-weight: 500;
+    }
+
+    &-links {
+        margin-top: $margin;
+    }
+}

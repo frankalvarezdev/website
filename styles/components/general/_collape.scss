@@ -24,7 +24,7 @@
         &:first-child {
             border-radius: rpt(2, $radius-sm) 0 0rem;
         }
-        
+
         &:nth-last-child(2) {
             border-radius: 0 0 rpt(2, $radius-sm);
         }

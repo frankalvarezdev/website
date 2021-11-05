@@ -1,6 +1,8 @@
-import Head from 'next/head'
+import Projects from 'components/project/projects';
+import Head from 'next/head';
 
 export default function Home() {
+
 	return (
 		<div className='container has-top-margin'>
 			<Head>
@@ -13,6 +15,12 @@ export default function Home() {
 				<p>
 					Developer
 				</p>
+			</div>
+			<div>
+				<h2>
+					Portafolio
+				</h2>
+				<Projects/>
 			</div>
 		</div>
 	)

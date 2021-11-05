@@ -1,3 +1,5 @@
+@import './variables';
+
 // background
 $bg: var(--bg);
 $secondary-bg: var(--secondary-bg);
@@ -15,7 +17,10 @@ $colors: (
     danger: $danger-color,
     warning: $warning-color,
     success: $success-color,
-    primary: $secondary-color
+    primary: $primary-color,
+    secondary: $secondary-color,
+    info: $secondary-bg,
+    bg: $bg
 );
 
 // border
@@ -24,7 +29,8 @@ $border-color: var(--border-color);
 // radius
 $radius-sm: 0.4rem;
 $radius: 1rem;
-$radius-full: 5rem;
+$radius-lg: 1.4rem;
+$radius-full: 6rem;
 
 // margin
 $margin-sm: 0.3rem;
@@ -42,9 +48,8 @@ $padding: 0.8rem;
 $padding-lg: 1.2rem;
 
 $paddings: (
-    padding-sm: $padding-sm,
-    padding: $padding,
-    padding-lg: $padding-lg
+    sm: $padding-sm,
+    lg: $padding-lg
 );
 
 
@@ -69,5 +74,3 @@ $navbar-height: 60px;
 // $nav-color: #0a0b0d;
 $z-index: 9900;
 $navbar-index: 9900;
-
-$positions: top, bottom, left, right;

@@ -3,8 +3,10 @@
         margin-bottom: $margin-lg;
     }
 }
-.label{
+
+.label {
     display: block;
+
     &:not(:last-child) {
         margin-bottom: .5em;
     }

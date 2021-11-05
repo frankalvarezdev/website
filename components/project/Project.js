@@ -12,10 +12,10 @@ const Project = ({ name, url, repository, image }) => {
             <ImageRectangle src={image} />            
 
             <div className='gap:sm project-links'>
-                <a href={repository} target='_blank' rel='referrer' title='repositorio'>
+                <a href={repository} target='_blank' rel='noreferrer' title='repositorio'>
                     <i className='brand-github' />
                 </a>
-                <a href={url} target='_blank' rel='referrer' title='Enlace'>
+                <a href={url} target='_blank' rel='noreferrer' title='Enlace'>
                     <Icon icon='open_in_new' />
                 </a>
             </div>

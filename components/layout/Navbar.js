@@ -6,15 +6,12 @@ const Navbar = () => {
         <>
             <div className='navbar'>
                 <div className='navbar-right'>
-                    <Linky to='/'>
-                        HOME
-                    </Linky>
-                    <Linky to='/'>
+                    <a href='#proyectos'>
                         PROYECTOS
-                    </Linky>
-                    <Linky to='/'>
+                    </a>
+                    <a href='#sobremi'>
                         SOBRE MI
-                    </Linky>
+                    </a>
                 </div>
                 <div className='navbar-left'>
                     <a href='https://github.com/frankalvarezdev' target='_blank' rel="noreferrer">

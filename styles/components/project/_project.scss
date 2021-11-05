@@ -12,5 +12,7 @@
 
     &-links {
         margin-top: $margin;
+        display: grid;
+        @include col(1 1);
     }
 }

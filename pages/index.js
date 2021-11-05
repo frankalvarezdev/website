@@ -12,15 +12,23 @@ export default function Home() {
 			</Head>
 			<div className='text-align:center'>
 				<h1>Frank Alvarez</h1>
-				<p>
-					Developer
-				</p>
+				<div className='opacity:1'>
+					Desarrollador frontend
+				</div>
 			</div>
-			<div>
+			<div className='section' id='proyectos'>
 				<h2>
-					Portafolio
+					Proyectos
 				</h2>
-				<Projects/>
+				<Projects />
+			</div>
+			<div className='section' id='sobremi'>
+				<h2>
+					Sobre mi
+				</h2>
+				<p className='opacity:1'>
+					Soy un desarrollador frontend junior, conozco tecnologías como reactjs y vuejs.
+				</p>
 			</div>
 		</div>
 	)

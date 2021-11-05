@@ -11,7 +11,7 @@ const Project = ({ name, url, repository, image }) => {
 
             <ImageRectangle src={image} />            
 
-            <div className='grid:2 gap:sm project-links'>
+            <div className='gap:sm project-links'>
                 <a href={repository} target='_blank' rel='referrer' title='repositorio'>
                     <i className='brand-github' />
                 </a>

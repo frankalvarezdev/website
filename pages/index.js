@@ -1,4 +1,4 @@
-import Projects from 'components/project/projects';
+import Projects from 'components/project/Projects';
 import Head from 'next/head';
 
 export default function Home() {

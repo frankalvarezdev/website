@@ -1,4 +1,12 @@
-$navbar-bg: $secondary-bg;
+$navbar-bg: $bg;
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: rgb(61, 178, 255);
+    background: linear-gradient(90deg, rgba(61,178,255,1) 25%, rgba(239,71,111,1) 75%);
+    opacity: 0.8;
+}
 
 .navbar {
     position: sticky;
@@ -19,6 +27,7 @@ $navbar-bg: $secondary-bg;
 
     a {
         transition: color 0.3s;
+
         &:hover {
             color: $primary-color;
         }
@@ -27,7 +36,7 @@ $navbar-bg: $secondary-bg;
     &-right {
         a {
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: bold;
             margin-right: 1.4rem;
         }
     }

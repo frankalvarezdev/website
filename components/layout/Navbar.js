@@ -15,10 +15,11 @@ const Navbar = () => {
                 </div>
                 <div className='navbar-left'>
                     <a href='https://github.com/frankalvarezdev' target='_blank' rel="noreferrer">
-                        <i className='brand-github'/>
+                        <i className='brand-github' />
                     </a>
                 </div>
             </div>
+            <div className='line' />
         </>
     )
 }

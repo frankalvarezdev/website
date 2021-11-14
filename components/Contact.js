@@ -1,5 +1,6 @@
 import { useForm } from '@formcarry/react';
 import TextareaAutosize from 'react-textarea-autosize';
+import Icon from './utils/Icon';
 
 const Contact = () => {
     // Call the `useForm` hook in your function component
@@ -30,7 +31,10 @@ const Contact = () => {
                 <TextareaAutosize id="message" name="message" className='textarea' minRows={2} />
             </div>
 
-            <button className='button is-primary' type="submit">Enviar</button>
+            <button className='button is-primary' type="submit">
+                <Icon icon='email' />&nbsp;
+                Enviar
+            </button>
         </form>
     );
 }

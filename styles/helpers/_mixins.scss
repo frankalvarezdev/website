@@ -49,3 +49,23 @@
         }
     }
 }
+
+@mixin container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include from(sm) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include from(md) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @include from(md) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}

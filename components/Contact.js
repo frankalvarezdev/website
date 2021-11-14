@@ -14,7 +14,7 @@ const Contact = () => {
     }
 
     return (
-        <form onSubmit={submit} className='mg-top:lg' className='contact-form'>
+        <form onSubmit={submit} className='contact-form'>
             <div className='grid:2 gap'>
                 <div>
                     <label className='label' htmlFor="name">Nombre</label>

@@ -1,19 +1,26 @@
 import ImageRectangle from "components/image/ImageRectangle";
 import Icon from "components/utils/Icon";
+import ProjectModal from 'components/project/ProjectModal';
+import { useState } from 'react';
 
-const Project = ({ name, url, repository, image }) => {
+const Project = ({ name, url, repository, image, description }) => {
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const closeModal = () => setIsOpen(false);
+    const openModal = () => setIsOpen(true);
 
     return (
         <div>
+            <ProjectModal open={modalIsOpen} close={closeModal} project={{ name, url, repository, image, description }} />
+
             <div className='project'>
                 <div className='content'>
-                    <h3>
-                        {name}
-                    </h3>
-
-                    <a href={url} target='_blank' rel='noreferrer'>
+                    <div onClick={openModal} className='cursor:pointer'>
+                        <h3>
+                            {name}
+                        </h3>
                         <ImageRectangle src={image} />
-                    </a>
+                    </div>
 
 
                     <div className='gap:sm project-links'>

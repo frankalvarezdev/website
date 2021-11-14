@@ -1,0 +1,75 @@
+.modal {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 0;
+    background: rgb(61, 178, 255);
+    background: linear-gradient(-45deg, #ee7752, rgba(239, 71, 111, 1), rgba(61, 178, 255, 1), #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    outline: 0;
+    padding: 1px;
+    margin-top: 20px !important;
+
+    &-content {
+        background-color: $bg;
+        padding: $padding-lg;
+        border: none;
+
+        h2 {
+            margin-bottom: $margin;
+        }
+    }
+
+    &-actions {
+        margin-top: $margin-lg;
+        display: grid;
+        @include col(1 1);
+        gap: 0.8rem;
+
+        a {
+            text-align: center;
+        }
+    }
+
+    @include to(sm) {
+        height: 100vh;
+        padding: 0;
+        width: 100%;
+
+        &-content {
+            height: 100%;
+        }
+    }
+
+    @include from(sm) {
+        margin-top: 2rem;
+    }
+}
+
+.modal-close {
+    cursor: pointer;
+    font-size: 1.3rem;
+    right: 0.5rem;
+    top: 0.5rem;
+    position: absolute;
+}
+
+.ReactModal__Overlay--after-open {
+    background-color: rgba(#000, 0.8) !important;
+    overflow-y: scroll;
+    z-index: 9999;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,40 @@
+$icons: 5;
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    span {
+        font-size: 2rem;
+    }
+
+    @include from(md) {
+        $i: 0;
+    
+        @while $i <=$icons {
+            span:nth-child(#{$i}) {
+                display: inline-block;
+                animation: float 4s infinite ease-in-out;
+                animation-delay: #{_div($i, 2)}s;
+            }
+    
+            $i: $i + 1;
+        }
+    }
+
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 16px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

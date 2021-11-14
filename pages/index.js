@@ -1,5 +1,6 @@
 import Contact from 'components/Contact';
 import Projects from 'components/project/Projects';
+import Skills from 'components/skills/Skills';
 import Head from 'next/head';
 
 export default function Home() {
@@ -32,6 +33,12 @@ export default function Home() {
 					Programador frontend, con un año de experiencia usando Vanilla JavaScript y tecnologías como Vue JS y React JS.
 					Soy empático con los demás, también me gusta aprender y probar nuevas tecnologías.
 				</p>
+			</div>
+			<div className='section' id='sobremi'>
+				<h2>
+					Habilidades
+				</h2>
+				<Skills/>
 			</div>
 			<div className='section' id='sobremi'>
 				<h2>

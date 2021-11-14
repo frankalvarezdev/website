@@ -17,7 +17,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className='section' id='proyectos'>
-				<h2>
+				<h2 className='mg-bottom:lg'>
 					Proyectos
 				</h2>
 				<Projects />

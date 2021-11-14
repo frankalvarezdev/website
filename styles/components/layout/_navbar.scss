@@ -8,9 +8,7 @@ $navbar-bg: $bg;
 }
 
 .navbar {
-    position: sticky;
     width: 100%;
-    top: 0;
     background-color: $navbar-bg;
     z-index: 9999;
     height: 60px;

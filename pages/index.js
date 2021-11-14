@@ -27,7 +27,8 @@ export default function Home() {
 					Sobre mi
 				</h2>
 				<p className='opacity:1'>
-					Soy un desarrollador frontend junior, conozco tecnologías como reactjs y vuejs.
+					Programador frontend, con un año de experiencia usando Vanilla JavaScript y tecnologías como Vue JS y React JS.
+					Soy empático con los demás, también me gusta aprender y probar nuevas tecnologías.
 				</p>
 			</div>
 		</div>

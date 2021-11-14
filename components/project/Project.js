@@ -10,7 +10,10 @@ const Project = ({ name, url, repository, image }) => {
                     {name}
                 </h3>
 
-                <ImageRectangle src={image} />
+                <a href={url} target='_blank' rel='noreferrer'>
+                    <ImageRectangle src={image} />
+                </a>
+
 
                 <div className='gap:sm project-links'>
                     <a href={repository} target='_blank' rel='noreferrer' title='repositorio'>

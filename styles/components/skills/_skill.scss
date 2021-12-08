@@ -1,25 +1,28 @@
 $icons: 5;
 
 .skills {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: rpt(5, 1fr);
+    text-align: center;
+    column-gap: 10%;
+    row-gap: 1rem;
 
     span {
         font-size: 2rem;
     }
 
     @include from(md) {
+        column-gap: 20%;
         $i: 0;
-    
+
         @while $i <=$icons {
-            span:nth-child(#{$i}) {
+            span:nth-child(#{$i}), span:nth-child(#{$i + 5}) {
                 display: inline-block;
                 animation: float 4s infinite ease-in-out;
                 animation-delay: #{_div($i, 2)}s;
             }
-    
-            $i: $i + 1;
+
+            $i: $i+1;
         }
     }
 

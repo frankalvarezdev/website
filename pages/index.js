@@ -38,13 +38,13 @@ export default function Home() {
 				<h2>
 					Habilidades
 				</h2>
-				<Skills/>
+				<Skills />
 			</div>
 			<div className='section' id='sobremi'>
 				<h2>
 					Contacto
 				</h2>
-				<Contact/>
+				<Contact />
 			</div>
 		</div>
 	)

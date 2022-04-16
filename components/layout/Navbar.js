@@ -12,6 +12,9 @@ const Navbar = () => {
                     <a href='#sobremi'>
                         SOBRE MI
                     </a>
+                    <a href='https://blog.frankalvarez.dev'>
+                        BLOG
+                    </a>
                 </div>
                 <div className='navbar-left'>
                     <a href='https://github.com/frankalvarezdev' target='_blank' rel="noreferrer">

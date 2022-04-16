@@ -4,7 +4,6 @@ import Skills from 'components/skills/Skills';
 import Head from 'next/head';
 
 export default function Home() {
-
 	return (
 		<div className='container has-top-margin'>
 			<Head>
@@ -16,7 +15,7 @@ export default function Home() {
 			<div className='iam'>
 				<h1>Frank Alvarez</h1>
 				<div className='iam-description'>
-					Desarrollador frontend
+					Desarrollador web
 				</div>
 			</div>
 			<div className='section' id='proyectos'>

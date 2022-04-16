@@ -6,21 +6,20 @@ $navbar-bg: $bg;
     // background: rgb(61, 178, 255);
     // background: linear-gradient(90deg, rgba(61, 178, 255, 1) 25%, rgba(239, 71, 111, 1) 75%);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    animation: AnimationName 15s ease infinite;
+    animation: gradient 6s ease infinite;
+    background-size: 200% 200%;
 }
 
-@keyframes AnimationName {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .navbar {

@@ -50,8 +50,8 @@ export default function Home() {
 					últimos artículos de mi blog
 				</p>
 				<div className='grid:4'>
-					{posts.map(post => (
-						<PostCard {...post} />
+					{posts.map((post, i) => (
+						<PostCard {...post} key={i} />
 					))}
 				</div>
 			</div>

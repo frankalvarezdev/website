@@ -16,9 +16,15 @@ export default function Home() {
 	return (
 		<div className='container has-top-margin'>
 			<Head>
-				<title>Frank Alvarez</title>
-				<meta name="description" content="Desarrollador web" />
+				<title>Frank Alvarez (Desarrollador web)</title>
+				<meta name="description" content="Desarrollador web, Frank Boris Alvarez Quispe" />
 				<meta property="og:image" content="https://frankalvarez.dev/og.png" />
+				<meta property="og:title" content="Frank Alvarez (Desarrollador web)" />
+				<meta property="og:description" content="Desarrollador web, Frank Boris Alvarez Quispe | Arequipa" />
+				<meta property="og:url" content="https://frankalvarez.dev" />
+				<meta property="og:type" content="website" />
+				<meta property="og:site_name" content="Frank Alvarez (Desarrollador web)" />
+				<meta name="twitter:site" content="@frankalvarezdev" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className='iam'>
@@ -38,7 +44,7 @@ export default function Home() {
 					Sobre mi
 				</h2>
 				<p className='opacity:1'>
-					Programador frontend, con un año de experiencia usando Vanilla JavaScript y tecnologías como Vue JS y React JS.
+					Programador frontend, con mas de un año de experiencia usando Vanilla JavaScript y tecnologías como Vue JS y React JS.
 					Soy empático con los demás, también me gusta aprender y probar nuevas tecnologías.
 				</p>
 			</div>

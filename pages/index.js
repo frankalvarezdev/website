@@ -15,7 +15,7 @@ export default function Home() {
 			<div className='iam'>
 				<h1>Frank Alvarez</h1>
 				<div className='iam-description'>
-					Desarrollador web
+					DESARROLLADOR WEB
 				</div>
 			</div>
 			<div className='section' id='proyectos'>

@@ -1,10 +1,26 @@
 $navbar-bg: $bg;
 
 .line {
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background: rgb(61, 178, 255);
-    background: linear-gradient(90deg, rgba(61,178,255,1) 25%, rgba(239,71,111,1) 75%);
+    // background: rgb(61, 178, 255);
+    // background: linear-gradient(90deg, rgba(61, 178, 255, 1) 25%, rgba(239, 71, 111, 1) 75%);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .navbar {

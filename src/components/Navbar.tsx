@@ -1,4 +1,5 @@
 import { Box, Container, Flex, Grid } from '@chakra-ui/react'
+import Link from 'next/link'
 import { BsGithub } from 'react-icons/bs'
 import { cssSheet } from 'src/utils/styles'
 
@@ -14,14 +15,14 @@ const Navbar = () => {
                         }}
                     >
                         <Box
-                            as='a'
+                            as={Link}
                             href='/#proyectos'
                         >
                             PROYECTOS
                         </Box>
 
                         <Box
-                            as='a'
+                            as={Link}
                             href='/#sobre-mi'
                         >
                             SOBRE MI

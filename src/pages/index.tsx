@@ -1,4 +1,5 @@
 import { Container, Heading, Text } from '@chakra-ui/react'
+import Head from 'next/head'
 import Banner from 'src/components/Banner'
 import Projects from 'src/components/Projects'
 import Skills from 'src/components/Skills'
@@ -6,6 +7,18 @@ import Skills from 'src/components/Skills'
 const Home = () => {
 	return (
 		<>
+			<Head>
+				<title>Frank Alvarez (Desarrollador web)</title>
+				<meta name="description" content="Desarrollador web" />
+				<meta property="og:image" content="https://cdn.frankalvarez.dev/profile.jpg" />
+				<meta property="og:title" content="Frank Alvarez (Desarrollador web) | Arequipa" />
+				<meta property="og:description" content="Desarrollador web | Arequipa" />
+				<meta property="og:url" content="https://frankalvarez.dev" />
+				<meta property="og:type" content="website" />
+				<meta name="twitter:site" content="@frankalvarezdev" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+
 			<Banner />
 
 			<Container maxW='6xl' mb={10}>

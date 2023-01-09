@@ -11,7 +11,7 @@ const Skills = () => {
     return (
         <Box className='skills' mt={8}>
             {skills.map((skill, i) => (
-                <Tooltip label={skill.name} key={i}>
+                <Tooltip label={skill.name} key={i} hasArrow>
                     <span>
                         {skill.icon}
                     </span>

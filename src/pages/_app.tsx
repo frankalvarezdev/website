@@ -7,6 +7,7 @@ import { Poppins } from '@next/font/google'
 import Footer from 'src/components/Footer'
 import { useEffect } from 'react'
 import { scrolly } from 'src/utils/scrolly'
+import Script from 'next/script'
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -29,6 +30,18 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	return (
 		<ChakraProvider theme={theme}>
+			<Script id='google-analytics' strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+			<Script id='google-analytics-script' strategy="lazyOnload">
+				{`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+					page_path: window.location.pathname,
+					});
+				`}
+			</Script>
+			
 			<main className={poppins.className}>
 				<Navbar />
 

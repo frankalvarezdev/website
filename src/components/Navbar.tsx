@@ -7,7 +7,12 @@ const Navbar = () => {
         <Box>
             <Container maxW='6xl'>
                 <Grid templateColumns='1fr auto' fontWeight={600} gap={5} py={4} alignItems='center'>
-                    <Flex gap={5}>
+                    <Flex gap={5}
+                        fontSize={{
+                            base: 'sm',
+                            md: 'md'
+                        }}
+                    >
                         <Box
                             as='a'
                             href='/#proyectos'

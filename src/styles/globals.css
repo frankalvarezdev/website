@@ -24,7 +24,7 @@
     font-size: 2rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     .skills {
         column-gap: 20%;
     }

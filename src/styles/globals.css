@@ -1,0 +1,87 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: 10%;
+    row-gap: 1rem;
+}
+
+.skills span {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .skills {
+        column-gap: 20%;
+    }
+
+    .skills span:nth-child(0),
+    .skills span:nth-child(5) {
+        display: inline-block;
+        animation: float 4s infinite ease-in-out;
+        animation-delay: 0s;
+    }
+
+    .skills span:nth-child(1),
+    .skills span:nth-child(6) {
+        display: inline-block;
+        animation: float 4s infinite ease-in-out;
+        animation-delay: 0.5s;
+    }
+
+    .skills span:nth-child(2),
+    .skills span:nth-child(7) {
+        display: inline-block;
+        animation: float 4s infinite ease-in-out;
+        animation-delay: 1s;
+    }
+
+    .skills span:nth-child(3),
+    .skills span:nth-child(8) {
+        display: inline-block;
+        animation: float 4s infinite ease-in-out;
+        animation-delay: 1.5s;
+    }
+
+    .skills span:nth-child(4),
+    .skills span:nth-child(9) {
+        display: inline-block;
+        animation: float 4s infinite ease-in-out;
+        animation-delay: 2s;
+    }
+
+    .skills span:nth-child(5),
+    .skills span:nth-child(10) {
+        display: inline-block;
+        animation: float 4s infinite ease-in-out;
+        animation-delay: 2.5s;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 16px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

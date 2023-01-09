@@ -19,7 +19,7 @@ const Projects = () => {
 
             <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={5} mt={5}>
                 {projects.map((project, i) => (
-                    <Card maxW='sm' key={i} variant='unstyled'>
+                    <Card maxW='sm' key={i} variant='unstyled' minW='full'>
                         <CardBody>
                             <Text size='md' mb={3}>
                                 {project.name}
@@ -43,7 +43,6 @@ const Projects = () => {
                             </Button>
                         </CardFooter>
                     </Card>
-
                 ))}
             </SimpleGrid>
         </>
